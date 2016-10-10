@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Dr Browns Dental Surgery</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
+    <script src='js/index.js'></script>
+
+  </head>
+
+  <body>
+    <div class= 'container' 'clearfix'>
+      <header>
+        <p> (03 9500 6999) </p>
+        <p> Opening hours: Mon-Friday 8.00am-5.00pm </p>
+      </header>
+
+      <div class= 'main-nav'>
+        <div class='logo'>
+          <img id='logo' src= 'images/LOGO.png' alt text='logo'>
+          <h1> Dr Grayton Browns Dental Surgery</h1>
+        </div>
+        <div class='nav'>
+          <a class='nav-button active' href=""> Home </a>
+          <a class='nav-button' href=""> About </a>
+          <a class='nav-button' href=""> Services </a>
+          <a class='nav-button' href=""> Contact </a>
+          <a class='nav-button' href=""> Book Appointment </a>
+        </div>
+      </div>
+
+      <div class="display-board">
+        <div class='slide-show'>
+          <img src='images/julie.jpg' alt text='smile'>
+        </div>
+        <div class='book-now'>
+          <h2> Book an Appointment </h2>
+          <form method='POST'>
+              <div>
+                <label>
+                <h2>First Name</h2>
+                <input type='text' placeholder="First Name" name='first_name'/>
+                </label>
+              </div>
+              <div>
+                <label>
+                <h2>Last Name</h2>
+              <input type='text' placeholder="Last Name" name='last_name'/>
+              </label>
+            </div>
+            <div>
+                <label>
+                <h2>Email</h2>
+                <input type='email' placeholder="Email" name='email'/>
+                </label>
+            </div>
+            <div>
+              <label>
+              <h2>Contact Number</h2>
+              <input type='tel' placeholder="Contact Number" name='contact_number'/>
+              </label>
+            </div>
+            <div>
+              <label>
+                <h2>Have you visited us before?</h2>
+                <select name='have_you_seen_us_before'>
+                <option> Yes </option>
+                <option> No </option>
+                </select>
+              </label>
+            </div>
+            <div id='submit'>
+            <input type="submit" value="Submit">
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class= 'quote'>
+      <p> Dr Richard Grayton Brown </p>
+      <p> Family Dentist </p>
+      <p class='italics'> Experienced, Friendly and Understanding </p>
+    </div>
+
+      <div class='clip-art-images'>
+        <img src='images/toothpaste.jpg' alt text='tooth-paste'>
+        <img src='images/open.jpg' alt text='open'>
+        <img src='images/tooth.jpg' alt text='tooth'>
+      </div>
+      <div class='contact-content'>
+      <h1> GET IN TOUCH </h1>
+      <h2 id='contact-blurb'> We're available for appointments between 0830-1800,
+        Monday to Friday and from 0900-1300 on Saturday to help
+        with any pet problems you may have. Why not speak to one
+        of our friendly team? call (03)9885 6999</h2>
+      </div>
+      <div class='contact-information'>
+        <div class= 'opening-hours'>
+          <h3>Opening Hours:</h3>
+          <p>Monday:</p>
+          <p>Tuesday:</p>
+          <p>Wednesday: Surfing</p>
+          <p>Thursday:</p>
+          <p>Friday:</p>
+          <p>Sat-Sun: Closed</p>
+          <p class='icon'id='phone'> <i class="fa fa-phone" aria-hidden="true"></i> (03) 9855 6999</p>
+          <p class='icon'><i class="fa fa-paper-plane-o" aria-hidden="true"></i> dr.brown@vtown.com.au</p>
+          <p class='icon'><i class="fa fa-map-marker" aria-hidden="true"></i> 142 Burke Rd, Malvern East VIC 3143</p>
+        </div>
+
+
+
+        <div class='location'>
+          <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyD12q_Q30KilIepQ3R41N2ZkgI2_fe4Nas'></script><div style='overflow:hidden;height:360px;width:527px;'><div id='gmap_canvas' style='height:360px;width:527px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='https://www.embedmap.net/'>how to embed a google map into a website</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=d2d4208bac065820a90d0600e25d7a9c56fc2258'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(-37.865403,145.05039),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(-37.865403,145.05039)});infowindow = new google.maps.InfoWindow({content:'<strong>Dr Browns Dental Surgery</strong><br>142 Burke Rd, Malvern East<br>3143 Melbourne<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+        </div>
+      </div>
+
+
+      <footer>
+
+      </footer>
+
+
+
+
+
+
+      <!-- main container -->
+    </div>
+  </body>
+</html>
