@@ -1,19 +1,62 @@
 $(document).ready(start);
 
 function start(){
+  setupNav();
   $('.show-more-button').click(showMoreContent);
   $('.show-less-button').click(showLessContent);
   $('#hamburger-button').click(showMobileNav);
-  $('#email-us').click(sendEmail);
+  $('.email-us').click(sendEmail);
   $('.service').click(showDesktopContent)
   $('#emergencies').click(scrollToEmegencies);
   $('.services, #services').click(scrollToServices);
-  $('#about-button').click(scrollToAbout);
-  // $('.#services').click(scrollToServices);
+  $('#about-button, #about').click(scrollToAbout);
   $('#contact').click(scrollToContactUs);
-  // $('#navservices').click(scrollToServices);
-  setupNav();
+  $('#book-now').click(scrollToBookNow);
+  $('#home').click(scrollToHome);
+
 }
+
+function setupNav() {
+  var stickyNavTop = $('.main-nav').offset().top;
+
+  var stickyNav = function(){
+  var scrollTop = $(window).scrollTop();
+
+  if (scrollTop > stickyNavTop) {
+      $('.main-nav').addClass('sticky');
+  } else {
+      $('.main-nav').removeClass('sticky');
+  }
+};
+  stickyNav();
+
+  $(window).scroll(function() {
+    stickyNav();
+  })};
+
+// WAYPOINT
+
+// function setUpWaypoint(){
+// $(".bio").waypoint(function() {
+// alert("waypoint hit");
+// });﻿
+// }
+
+  // var $bio = $('.bio');
+  //
+  //   $bio.waypoint(function (){
+  //     console.log('waypoint');
+  //   });
+  //
+  // var waypoint = new Waypoint({
+  //   element: document.getElementById('waypoint'),
+  //   handler: function(direction) {
+  //     console.log('Scrolled to waypoint!')
+  //   }
+  // })
+
+  // END WAYPOINT
+
 
 function showMoreContent(){
   var wrapper = $(this).closest('.hidden-content-wrapper');
@@ -45,7 +88,7 @@ function showDesktopContent (){
   }
 
 function showServices (){
-  $('.hide-me').slideToggle();
+  $('.hide-me').show();
 }
 
 function scrollToEmegencies(){
@@ -54,7 +97,7 @@ function scrollToEmegencies(){
 
 function scrollToServices(){
   showServices();
-  $(window).scrollTo($('.service-list'), 2000);
+  $(window).scrollTo($('.hide-me'), 2000);
 }
 
 function scrollToContactUs(){
@@ -65,22 +108,10 @@ function scrollToAbout(){
   $(window).scrollTo($('.main-content'), 2000);
 }
 
-function setupNav() {
-  var stickyNavTop = $('.main-nav').offset().top;
+function scrollToBookNow(){
+  $(window).scrollTo($('.opening-hours'),2000);
+}
 
-  var stickyNav = function(){
-    var scrollTop = $(window).scrollTop();
-
-    if (scrollTop > stickyNavTop) {
-        $('.main-nav').addClass('sticky');
-    } else {
-        $('.main-nav').removeClass('sticky');
-    }
-  };
-
-  stickyNav();
-
-  $(window).scroll(function() {
-    stickyNav();
-  });
+function scrollToHome(){
+  $(window).scrollTo($('.container'),2000);
 }

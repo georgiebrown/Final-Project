@@ -9,67 +9,70 @@
     <script type="text/javascript" src="jquery.arbitrary-anchor.js"></script>
     <script src='js/index.js'></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.0/jquery.scrollTo.min.js"></script>
-    <script src='js/waypoint.js'></script>
+    <script src='js/jquery.waypoints.min.js'></script>
 
   </head>
 
   <body>
     <div class= 'container' 'clearfix'>
-      <header>
-        <div>
-          <p> (03) 9885 6999 </p>
-          <p> 142 Burke Rd, Malvern East VIC 3143 </p>
-        </div>
-        <p> Opening hours: Mon-Friday 8.00am-5.00pm </p>
-      </header>
+        <header>
+          <div>
+            <p> (03) 9885 6999 </p>
+          </div>
+          <div>
+            <p> 142 Burke Rd, Malvern East VIC 3143 </p>
+          </div>
+          <p> Opening hours: Mon-Friday 8.00am-5.00pm </p>
+        </header>
 
-      <div class= 'main-nav'>
-        <div class='logo'>
-          <img id='logo' src= 'images/logocolour.png' alt text='logo'>
-          <h1> Dr Brown's Dental Surgery</h1>
-        </div>
-        <div class='nav'>
-          <div class='nav-button active'>
-            <a href=""> Home </a>
+        <div class= 'main-nav'>
+          <div class='logo'>
+            <img id='logo' src= 'images/logocolour.png' alt text='logo'>
+            <h1> Dr Brown's Dental Surgery</h1>
           </div>
-          <div class='nav-button' id='about'>
-            <a  href=""> About </a>
-          </div>
-          <div class='nav-button' id='services'>
-            <a  href=""> Services </a>
-              <!-- <div class='drop-down'>
-                <ul>
-                  <li>sdjnkasnds</li>
-                  <li>skjndksj</li>
-                  <li>skldsl</li>
-                </ul>
-              </div> -->
-          </div>
-          <div class='nav-button' id='contact'>
-            <a href=""> Contact </a>
-          </div>
-          <div class='nav-button'>
-            <a href=""> Book Appointment </a>
-          </div>
+          <div class='nav'>
+            <div class='nav-button active' id='home'>
+              <p> Home </p>
+            </div>
+            <div class='nav-button' id='about'>
+              <p> About </p>
+            </div>
+            <div class='nav-button' id='services'>
+              <p> Services </p>
+                <!-- <div class='drop-down'>
+                  <ul>
+                    <li>sdjnkasnds</li>
+                    <li>skjndksj</li>
+                    <li>skldsl</li>
+                  </ul>
+                </div> -->
+            </div>
+            <div class='nav-button' id='contact'>
+              <p> Contact </p>
+            </div>
+            <div class='nav-button' id='book-now'>
+              <p> BOOK APPOINTMENT </p>
+            </div>
 
+          </div>
+          <div class='mobile-nav'>
+            <i id='hamburger-button'class="fa fa-bars" aria-hidden="true"></i>
+          </div>
         </div>
-        <div class='mobile-nav'>
-          <i id='hamburger-button'class="fa fa-bars" aria-hidden="true"></i>
-        </div>
-      </div>
+
 
       <section class="display-board">
         <!-- <div class='slide-show'>
           <img src='images/julie.jpg' alt text='smile'> -->
-            <div class='box-content'>
-              <img src='images/logocolour.png' alt text='logo-white'>
-              <h2> DR BROWN</h2>
-              <h2> FAMILY DENTIST </h2>
-              <p class= 'italics'> Experienced, Friendly </p>
-              <p class='italics'>and Understanding </p>
-              <p> <i class="fa fa-phone" aria-hidden="true"></i>(03) 9885 6999 </p>
-              <button id='email-us'> Contact Us </button>
-            </div>
+        <div class='box-content'>
+          <img src='images/logocolour.png' alt text='logo-white'>
+          <h2> DR BROWN</h2>
+          <h2> FAMILY DENTIST </h2>
+          <p class= 'italics'> Experienced, Friendly </p>
+          <p class='italics'>and Understanding </p>
+          <p> <i class="fa fa-phone" aria-hidden="true"></i>(03) 9885 6999 </p>
+          <button class='email-us'> Contact Us </button>
+        </div>
 
       </section>
 
@@ -97,163 +100,161 @@
             <div class='main-content-wrapper'>
               <h2> About Us </h2>
             </div>
-            <p> Dr Brown has 30 years experience in general dentistry
-            and is in touch with the latest dental materials
-            and techniques.</p>
-            <p>Richard is caring, gently and understands his patients
-            needs. </p>
-            <P>He is a long term member of ADA and AHPRA.</p>
-            <p>In his spare time he enjoys hiking in the high country
-              and spending time with his wife and 4 children and their families.</p>
-            <p>  His staff Jan and Meg have worked with him for over 10 years.</p>
+              <p> Dr Brown has 30 years experience in general dentistry
+              and is in touch with the latest dental materials
+              and techniques.</p>
+              <p>Richard is caring, gently and understands his patients
+              needs. </p>
+              <P>He is a long term member of ADA and AHPRA.</p>
+              <p>In his spare time he enjoys hiking in the high country
+                and spending time with his wife and 4 children and their families.</p>
+              <p>  His staff Jan and Meg have worked with him for over 10 years.</p>
           </div>
         </div>
         <div>
-            <img src='images/max.jpg' alt text='dr-brown'/>
+          <img src='images/max.jpg' alt text='dr-brown'/>
         </div>
       </div>
-    </div>
     <!-- HIDDEN SERVICES -->
 
     <div class='hide-me'>
       <div class='service-list'>
-        <h1> Our Services </h2>
-        <div class='service'>
-          <img src='images/mouth.jpeg' alt text='general-services'>
-          <div class='service-text'>
-            <h2> General Dental Services </h2>
-            <span class='hide-me-in-mobile'>
-            <p>Welcome to our family dental practise where we provide all
-            general dental services including:</p>
-            <ul>
-              <li> Crowns </li>
-              <li> Bridges </li>
-              <li> Veneers </li>
-              <li> kjsdnskjnf</li>
-            </ul>
-            <div class="hidden-content-wrapper">
-              <i class="fa fa-arrow-down show-more-button" aria-hidden="true">Read More</i>
-              <p class='hidden-text'>llentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare
-                llentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare
-                <i class="fa fa-arrow-up show-less-button" aria-hidden="true"></i>
-              </p>
+        <h1> Our Services </h1>
+        <div class='services-we-offer'>
+          <div class='service'>
+            <img src='images/mouth.jpeg' alt text='general-services'>
+            <div class='service-text'>
+              <h2> General Dental Services </h2>
+              <span class='hide-me-in-mobile'>
+              <!-- <p>Welcome to our family dental practise where we provide all
+              general dental services including:</p>
+              <ul>
+                <li> Crowns </li>
+                <li> Bridges </li>
+                <li> Veneers </li>
+                <li> kjsdnskjnf</li>
+              </ul> -->
+              <div class="hidden-content-wrapper">
+                <i class="fa fa-arrow-down show-more-button" aria-hidden="true">Read More</i>
+                <p class='hidden-text'>llentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare
+                  llentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare
+                  <i class="fa fa-arrow-up show-less-button" aria-hidden="true"></i>
+                </p>
+              </div>
+              </span>
             </div>
-            </span>
           </div>
-        </div>
-        <div class='service'>
-          <img src='images/tooth.jpg' alt text='cosmetic-dentistry'>
-          <div class='service-text'>
-            <h2> Cosmetic Dentistry </h2>
-            <span class='hide-me-in-mobile'>
-            <p>Welcome to our family dental practise where we provide all
-            general dental services including:</p>
-            <ul>
-              <li> Crowns </li>
-              <li> Bridges </li>
-              <li> Veneers </li>
-              <li> kjsdnskjnf</li>
-            </ul>
+          <div class='service'>
+            <img src='images/tooth.jpg' alt text='cosmetic-dentistry'>
+            <div class='service-text'>
+              <h2> Cosmetic Dentistry </h2>
+              <span class='hide-me-in-mobile'>
+              <!-- <p>Welcome to our family dental practise where we provide all
+              general dental services including:</p>
+              <ul>
+                <li> Crowns </li>
+                <li> Bridges </li>
+                <li> Veneers </li>
+                <li> kjsdnskjnf</li>
+              </ul> -->
 
-            <div class='hidden-content-wrapper'>
-              <i class="fa fa-arrow-down show-more-button" aria-hidden="true">Read More</i>
-              <p class='hidden-text'>llentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare
-                llentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare
-                <i class="fa fa-arrow-up show-less-button" aria-hidden="true"></i>
-              </p>
-            </div>
-            </span>
-          </div>
-        </div>
-        <div class='service'>
-          <img src='images/toothpaste.jpg' alt text='tooth-whitening'>
-          <div class='service-text'>
-            <h2> Tooth Whitening </h2>
-            <p>llentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum s </p>
-            <div class="hidden-content-wrapper">
-              <i class="fa fa-arrow-down show-more-button" aria-hidden="true">Read More</i>
-              <p class='hidden-text'>llentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare
-                llentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare
-                <i class="fa fa-arrow-up show-less-button" aria-hidden="true"></i>
-              </p>
-            </div>
-        </div>
-        </div>
-        <div class='service'>
-          <img src='images/badtooth.jpg' alt-text='emergencies'>
-          <div class='service-text'>
-            <h2> Emergencies </h2>
-            <p>llentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra
-            </p>
-            <div class="hidden-content-wrapper">
-              <i class="fa fa-arrow-down show-more-button" aria-hidden="true">Read More</i>
-              <p class='hidden-text'>llentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare
-                llentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare
-                <i class="fa fa-arrow-up show-less-button" aria-hidden="true"></i>
-              </p>
+              <div class='hidden-content-wrapper'>
+                <i class="fa fa-arrow-down show-more-button" aria-hidden="true">Read More</i>
+                <p class='hidden-text'>llentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare
+                  llentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare
+                  <i class="fa fa-arrow-up show-less-button" aria-hidden="true"></i>
+                </p>
+              </div>
+              </span>
             </div>
           </div>
+          <div class='service'>
+            <img src='images/toothpaste.jpg' alt text='tooth-whitening'>
+            <div class='service-text'>
+              <h2> Tooth Whitening </h2>
+              <!-- <p>llentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum s </p> -->
+              <div class="hidden-content-wrapper">
+                <i class="fa fa-arrow-down show-more-button" aria-hidden="true">Read More</i>
+                <p class='hidden-text'>llentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare
+                  llentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare
+                  <i class="fa fa-arrow-up show-less-button" aria-hidden="true"></i>
+                </p>
+              </div>
+          </div>
+          </div>
+          <div class='service'>
+            <img src='images/badtooth.jpg' alt-text='emergencies'>
+            <div class='service-text'>
+              <h2> Emergencies </h2>
+              <!-- <p>llentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra -->
+              </p>
+              <div class="hidden-content-wrapper">
+                <i class="fa fa-arrow-down show-more-button" aria-hidden="true">Read More</i>
+                <p class='hidden-text'>llentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare
+                  llentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare
+                  <i class="fa fa-arrow-up show-less-button" aria-hidden="true"></i>
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+    </div>
+  </div>
+
+  <div class='contact-content'>
+    <div class='contact-content-wrapper'>
+      <h1> CONTACT US </h1>
+      <p> We're available for appointments between 0830-1700,
+        Monday to Friday.</p>
+      <p><span id='red'>Emergency dental care</span> is always available. We will fit you in on the day.</p>
+      <p>We are conveniently located near the corder of Burke and Wattletree Roads
+        opposite Central Park.</p>
+      <p>There is ample free parking and the No.5 tram is across the road.</p>
+      <p>  Why not speak to one of our friendly team? Call (03)9885 6999</p>
+    </div>
+  </div>
+  <div class='contact-information'>
+    <h2> CONTACT US </h2>
+    <div class='location'>
+      <img id='map' alt text='map' src='images/map.png'>
     </div>
 
+    <div class= 'opening-hours'>
+      <div>
+      <h3>Opening Hours:</h3>
+      <p>Monday: 9.00-5.00</p>
+      <p>Tuesday: 8.30-5.00</p>
+      <p>Wednesday: 9.00-12.00 (Office Only)</p>
+      <p>Thursday:8.30-5.00</p>
+      <p>Friday: 8.30-3.00</p>
+    </div>
+    <div>
+      <h3> Book An Appointment:</h3>
+      <p class='icon' id='phone'> <i class="fa fa-phone" aria-hidden="true"></i> (03) 9885 6999</p>
+      <p class='icon'><i class="fa fa-paper-plane-o" aria-hidden="true"></i> <span class='email-us id='email-adress''>dr.richardgbrown@aapt.net.au</span></p>
+      <p class='icon'><i class="fa fa-map-marker" aria-hidden="true"></i> 142 Burke Rd, Malvern East VIC 3143</p>
+    </div>
+    </div>
+
+  </div>
 
 
 
+  <footer>
+    <div class='footer-nav'>
+      <a class='active' href='index.html'>Home</a> |
+      <a href='about.html'>About</a> |
+      <a href='services.html'>Services</a> |
+      <a href='contact.html'>Contact</a> |
+    </div>
+    <div class='footer-icons'>
+      <i class="fa fa-wheelchair" aria-hidden="true"></i>
+      <i class="fa fa-cc-amex" aria-hidden="true"></i>
+      <i class="fa fa-cc-mastercard" aria-hidden="true"></i>
+      <i class="fa fa-cc-visa" aria-hidden="true"></i>
+    </div>
 
-      <div class='contact-content'>
-        <div class='contact-content-wrapper'>
-          <h1> CONTACT US </h1>
-          <p> We're available for appointments between 0830-1700,
-            Monday to Friday.</p>
-          <p><span id='red'>Emergency dental care</span> is always available. We will fit you in on the day.</p>
-          <p>We are conveniently located near the corder of Burke and Wattletree Roads
-            opposite Central Park.</p>
-          <p>There is ample free parking and the No.5 tram is across the road.</p>
-          <p>  Why not speak to one of our friendly team? Call (03)9885 6999</p>
-        </div>
-      </div>
-      <div class='contact-information'>
-        <h2> CONTACT US </h2>
-        <div class='location'>
-          <img id='map' alt text='map' src='images/map.png'>
-        </div>
-
-        <div class= 'opening-hours'>
-          <div>
-          <h3>Opening Hours:</h3>
-          <p>Monday: 9.00-5.00</p>
-          <p>Tuesday: 8.30-5.00</p>
-          <p>Wednesday: 9.00-12.00 (Office Only)</p>
-          <p>Thursday:8.30-5.00</p>
-          <p>Friday: 8.30-3.00</p>
-        </div>
-        <div>
-          <p class='icon' id='phone'> <i class="fa fa-phone" aria-hidden="true"></i> (03) 9885 6999</p>
-          <p class='icon'><i class="fa fa-paper-plane-o" aria-hidden="true"></i> dr.richardgbrown@aapt.net.au</p>
-          <p class='icon'><i class="fa fa-map-marker" aria-hidden="true"></i> 142 Burke Rd, Malvern East VIC 3143</p>
-        </div>
-        </div>
-
-      </div>
-
-
-
-      <footer>
-        <div class='footer-nav'>
-          <a class='active' href='index.html'>Home</a> |
-          <a href='about.html'>About</a> |
-          <a href='services.html'>Services</a> |
-          <a href='contact.html'>Contact</a> |
-        </div>
-        <div class='footer-icons'>
-          <i class="fa fa-wheelchair" aria-hidden="true"></i>
-          <i class="fa fa-cc-amex" aria-hidden="true"></i>
-          <i class="fa fa-cc-mastercard" aria-hidden="true"></i>
-          <i class="fa fa-cc-visa" aria-hidden="true"></i>
-        </div>
-
-      </footer>
+  </footer>
 
 
 
