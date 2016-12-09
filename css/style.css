@@ -408,6 +408,8 @@ align-items: center;
 
 .opening-hours i {
   color: white;
+  font-size: 30px;
+  margin-right: 10px;
 }
 
 .opening-hours{
@@ -418,6 +420,7 @@ align-items: center;
    line-height: 24px;
    padding: 30px;
    margin-bottom: 60px;
+   color: black;
  }
 
 
@@ -562,7 +565,7 @@ img#map {
 }
 
 .service {
-  width: 40%;
+  width: 70%;
   display: flex;
   flex-direction: row;
   padding: 20px;
@@ -763,7 +766,9 @@ input {
 
 .opening-hours {
   margin: 0;
+  color: black;
 }
+
 
 .footer-nav a {
   padding: 0px;
