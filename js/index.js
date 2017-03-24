@@ -9,7 +9,7 @@ function start(){
   $('.service').click(showDesktopContent)
   $('#emergencies').click(scrollToEmegencies);
   $('.services, #services').click(scrollToServices);
-  $('#about-button, #about').click(scrollToAbout);
+  $('#about-button, .about').click(scrollToAbout);
   $('#contact').click(scrollToContactUs);
   $('#book-now').click(scrollToBookNow);
   $('#home').click(scrollToHome);
